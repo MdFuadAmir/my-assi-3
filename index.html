@@ -39,39 +39,51 @@
   <header>
 <!-- Navigation section -->
    <nav class="mt-5 mx-4 md:mx-12 lg:mx16">
-    <div class="flex items-center justify-between w-full lg:h-[120px] bg-[#F85559] rounded-[600px]">
-<!-- navber First part -->
-      <div class="flex list-none gap-7 text-[18px] font-medium ml-14 text-white">
-        <li><a href="">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">All Fruits</a></li>
+
+    <div class="navbar h-[120px] bg-[#F85559] rounded-[600px] grid grid-cols-2 lg:grid-cols-3">
+<!-- navber start -->
+
+      <div class="navbar-start text-white items-center text-center list-none gap-8 text-base font-semibold py-9 px-12">
+          <li><a>Home</a></li>
+          <li><a>About.Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All.Fruits</a></li>
       </div>
-      <!-- navber 2 nd part -->
-      <div class="navbar-center flex gap-4 items-center">
-        <img src="./images/logo.png" alt="Logo">
-        <h1 class=" text-white text-4xl font-bold">Fruit Burst</h1>
+     
+<!-- navber center -->
+
+      <div class="navbar-center items-center justify-center">
+        <div class="navbar-center flex gap-4 items-center">
+          <img src="./images/logo.png" alt="Logo">
+          <h1 class="text-white text-4xl font-bold">Fruit Burst</h1>
+        </div>
+      </div>
+<!-- navber end -->
+
+      <div class="navbar-end rounded-full ml-16 hidden lg:contents">
+          <div class="form-control w-[300px]">
+            <input type="text" placeholder="Search here" class="input rounded-full input-bordered  md:w-auto" />
+          </div>
+          <button class="btn btn-ghost btn-circle relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+      </div>
+
+       <!-- <div class=" navbar-end lg:hidden">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div> -->
     </div>
 
-<!-- navber End part -->
-      <div class="flex-none gap-2">
-        <div class="form-control">
-          <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-[50px] mr-12 lg:w-96" />
-        </div>
-        <!--<div class="dropdown dropdown-end">
-          <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-            <li>
-              <a class="justify-between">
-                Profile
-                <span class="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
-        </div> -->
-      </div>
-    </div>
    </nav>
 
 <!-- slide section -->
@@ -139,27 +151,27 @@
       </div>
     </div>
 <!-- fruit section -->
-    <div class="hidden md:hidden lg:contents">
-      <div class="absolute -mt-32 ml-[150px] flex items-center justify-center gap-12 max-w-[800px]  bg-white h-60 ">
+    <div class="hidden md:hidden lg:contents absolute">
+      <div class="absolute -mt-32 ml-[60px]  flex items-center justify-center gap-8 text-center min-w-[900px] rounded-lg  bg-white h-60 ">
         <div>
           <img src="./images/fruit1.png">
-          <p class="text-[#12121299] text-base font-bold">Strawberry</p>
+          <p class="text-[#12121299] text-base font-bold mt-4">Strawberry</p>
         </div>
         <div>
           <img src="./images/fruit2.png">
-          <p class="text-[#12121299] text-base font-bold">Orange</p>
+          <p class="text-[#12121299] text-base font-bold mt-4">Orange</p>
         </div>
         <div>
           <img src="./images/fruit3.png">
-          <p class="text-[#12121299] text-base font-bold">Mango</p>
+          <p class="text-[#12121299] text-base font-bold mt-4">Mango</p>
         </div>
         <div>
           <img src="./images/fruit4.png">
-          <p class="text-[#12121299] text-base font-bold">Strawberry</p>
+          <p class="text-[#12121299] text-base font-bold mt-4">Strawberry</p>
         </div>
         <div>
           <img src="./images/fruit5.png">
-          <p class="text-[#12121299] text-base font-bold">Mango</p>
+          <p class="text-[#12121299] text-base font-bold mt-4">Mango</p>
         </div>
       </div>
     </div>
@@ -643,6 +655,8 @@
           </div>
         </div>
       </section>
+<!-- Why Choose Us container section is not complete-->
+
     </main>
 <!-- footer section start -->
     <footer class="footer footer-center p-10 bg-black text-primary-content">
@@ -651,7 +665,7 @@
               <img src="./images/logo.png" alt="Logo">
               <h1 class="text-white text-4xl font-bold">Fruit Burst</h1>
           </div>
-          <div class="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 list-none gap-10 justify-center mt-7 text-lg font-semibold text-white">
+          <div class="mx-auto grid grid-cols-3 text-center md:grid-cols-4 lg:grid-cols-6 list-none gap-10 justify-center mt-7 text-lg font-semibold text-white">
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Shop</a></li>
@@ -661,8 +675,8 @@
           </div>
       </div> 
       <div>
-        <div class="mx-auto grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-6">
-          <!-- twitter -->
+        <div class="mx-auto grid gap-6 grid-cols-6 md:grid-cols-3 lg:grid-cols-6 mt-6">
+
           <svg width="23" height="23" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="twitter 1" clip-path="url(#clip0_12_5266)">
               <path id="Vector" d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
@@ -742,5 +756,6 @@
         </div>
       </div>
     </footer>
+<!-- footer section complete -->
 </body>
 </html>
